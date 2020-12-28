@@ -1,0 +1,171 @@
+/* Importing Custom Fonts */
+@font-face{
+    font-family: shadows-into-light-regular;
+    src : url(ShadowsIntoLight-Regular.ttf)
+}
+
+@font-face{
+    font-family: mrs-saint-delafield-regular;
+    src: url(MrsSaintDelafield-Regular.ttf)
+}
+
+@font-face{
+    font-family: pinyon-script-regular;
+    src: url(PinyonScript-Regular.ttf);
+}
+
+/* Common for entite body */
+body{
+    font-size: 20px;
+    margin: 0px auto 0px auto;
+    padding: 0px 0px 0px 0px;
+}
+
+.container-main {
+    width: 1140px;
+    height: auto;
+    margin: 0px auto 0px auto;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    line-height: 0px;
+    border: 3px solid white;
+}
+
+#bg-img-intro, #container-intro-inspirations{
+    height: 500px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    z-index: 950;
+}
+
+#container-intro-inspirations {
+    margin-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 0px;
+}
+
+#containter-intro-content{
+    width: 100%;
+    height: 50%;
+    line-height: normal;
+}
+
+.containter-inspirations{
+    width: 100%;
+    height: 50%;
+    line-height: normal;
+}
+
+#container-intro,#container-profiles-links{
+    height: 100%;
+    float: left;
+}
+
+#container-intro{
+    width: 70%;
+}
+
+#container-profiles-links{
+    width: 30%;
+    padding-top: 50px 10px 10px 10px;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#containter-inspirations-general{
+    height: 85%;
+    width: 100%;
+}
+
+#containter-inspirations-content{
+    width: 690px;
+    height: 100%;
+    float: left;
+}
+
+#containter-inspirations-image{
+    width: 450px;
+    height: 288px;
+    float: left;
+}
+
+#hr-rule{
+    width: 100%;
+    height: 3px;
+    background: rgba(64, 183, 219, 0.68);
+}
+
+#container-main-passion{
+    position: relative;
+    z-index: 900;
+}
+
+#container-passion-content{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    margin: 0px;
+    padding: 20px;
+    height: auto;
+    line-height: normal;
+}
+
+/* Test Styles*/
+.text-style-intro,.text-style-walking, .mantra, 
+.text-style-passion, #link-break-in-walk{
+    font-family: shadows-into-light-regular;
+    color: rgb(255, 255, 255);
+    height: auto;
+}
+
+.text-style-intro{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+.text-style-walking{
+    margin: 0px 0px 0px 10px;
+}
+
+.mantra {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 20px 20px 0px 20px;
+}
+
+.signature {
+    font-family: mrs-saint-delafield-regular;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px 20px 0px 20px;
+}
+
+.text-style-passion{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+#link-break-in-walk{
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px 0px 150px 300px;
+}
+
+.complete-name{
+    color: rgb(255, 255, 255);
+    padding: 3px;
+}
+
