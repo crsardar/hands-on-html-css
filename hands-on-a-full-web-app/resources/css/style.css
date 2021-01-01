@@ -1,0 +1,325 @@
+/*-----------------------------------------*/
+/* Applicable for everything in the page */
+/*-----------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', scans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/*-----------------------------------------*/
+/*  REUSEABLE   */
+/*-----------------------------------------*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto; /* == 'margin: 0 auto 0 auto';*/
+}
+
+section {
+    padding: 80px 0px;
+}
+
+.box {
+    padding: 1%;
+}
+
+/*----- HEADER -----*/
+h1, h2, h3 { /* applicable to all <h1> <h2> <h3>*/
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after { /* applicable immediately after </h2>*/
+    display: block;
+    height: 2px;
+    width: 100px;
+    margin: 30px auto 0px auto;
+    background-color: #e67e22;
+    content: "";
+} 
+
+/*----- PARAGRAPHS -----*/
+.long-copy {
+    width: 70%;
+    margin-left: 15%;
+    line-height: 145%;
+}
+
+.box p { /* selce <p> inside < class="box">*/
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*----- LINK -----*/
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #e67e22;
+    target:_blank;
+    /* Animate 'color in .5 seconds' and animate 'border-bottom in .5 seconds'*/
+    transition: color .5s, border-bottom 0.5s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: color .5s, border-bottom .5s;
+}
+
+/*----- BUTTONS -----*/
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #a15512;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    background-color: #a15512;
+    border: 1px solid #a15512;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: #e67e22;
+    border: 1px solid #e67e22;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    color: #fff;
+    border: 1px solid #a15512;
+}
+
+/*-----------------------------------------*/
+/*  HEADER   */
+/*-----------------------------------------*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 1%;
+}
+
+.main-nav {
+    float:right;
+    list-style: none;
+    margin-top: 3.5%;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 5px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+/*-----------------------------------------*/
+/*  MEALS   */
+/*-----------------------------------------*/
+.section-meal {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    transform : scale(1.15);
+    opacity: 0.7;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    transform : scale(.903);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;;
+}
+
+
+/*-----------------------------------------*/
+/*  HOW IT WORKS   */
+/*-----------------------------------------*/
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+.steps-box {
+    margin-top: 30px;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+    width: 50px;
+    height: 50px;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    float: left;
+}
+
+.btn-app img { /* selce <img> inside < class="btn-app">*/
+    height: 50%;
+    width: auto;
+}
+
+/*-----------------------------------------*/
+/*  CITIES   */
+/*-----------------------------------------*/
+.cities-box {
+    width: 25%;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.img-cities {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.my-row {
+    margin: 0;
+    padding: 0;
+    
+}
+.cities-row:before,
+.cities-row:after {
+    /* To make 'cities-box' wrap all of children, all in this required */
+    content:"";
+    display:table;
+    clear:both;
+}
