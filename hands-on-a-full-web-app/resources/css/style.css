@@ -113,7 +113,8 @@ a:active {
 
 /*----- BUTTONS -----*/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -129,13 +130,16 @@ a:active {
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
 }
 
 .btn-full:hover,
-.btn-full:active{
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #a15512;
     border: 1px solid #a15512;
 }
@@ -160,6 +164,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -288,6 +293,7 @@ header {
     padding: 5px;
     font-size: 150%;
     float: left;
+    float: left;
 }
 
 .btn-app img { /* selce <img> inside < class="btn-app">*/
@@ -322,4 +328,147 @@ header {
     content:"";
     display:table;
     clear:both;
+}
+
+/*-----------------------------------------*/
+/*  CUSTOMERS   */
+/*-----------------------------------------*/
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+/*-----------------------------------------*/
+/*  SIGN UP   */
+/*-----------------------------------------*/
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    width: 90%;
+    margin-left: 5%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 20px 20px 20px #e8e8e8;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+    background-color: #e0e0e0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+/*-----------------------------------------*/
+/*  CONTACT US */
+/*-----------------------------------------*/
+.section-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+*:focus {
+    outline: none;
+}
+
+/*-----------------------------------------*/
+/*  FOOTER */
+/*-----------------------------------------*/
+footer {
+    background-color: #333;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.footer-nav li {
+    display: inline-block;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.social-links li {
+    display: inline-block;
 }
