@@ -460,15 +460,13 @@ footer {
     float: left;
 }
 
-.footer-nav li {
-    display: inline-block;
-}
-
 .social-links {
     list-style: none;
     float: right;
 }
 
+.footer-nav li,
 .social-links li {
     display: inline-block;
+    margin: 5px 10px 5px 5px;
 }
