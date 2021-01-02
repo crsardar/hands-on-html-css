@@ -293,7 +293,10 @@ header {
     padding: 5px;
     font-size: 150%;
     float: left;
-    float: left;
+}
+
+.works-step p {
+    padding-left: 12%;
 }
 
 .btn-app img { /* selce <img> inside < class="btn-app">*/

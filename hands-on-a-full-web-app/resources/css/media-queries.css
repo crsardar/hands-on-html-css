@@ -1,0 +1,142 @@
+/* To Make The Screen Compatible For Different Screen Width 
+
+Note - 
+    1. Need to include this .css file in the header of 'index.html'.
+    2. Include <meta name="viewport" connect="width=device-width, initial-scale=1.0"> in 'index.html'.
+
+Like: -
+    <head>
+        <!-- To Support Different Screen Size -->
+        <meta name="viewport" connect="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="resources/css/media-queries.css">
+    </head>
+
+*/
+
+/* All default values i.e values in ./style.css are applicable, 
+only mentioned attributes in this blocks will be over-written. */
+
+@media only screen and (max-width: 1200px){
+    .row,
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    h1 {
+        font-size: 220%;
+    }
+
+    h2 {
+        font-size: 160%;
+    }
+
+    h3 {
+        font-size: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    
+    html {
+        font-size: 15px;
+    }
+    
+    .row {
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    h2:after {
+        margin: 10px auto 0px auto;
+    }
+    
+    section {
+        padding: 30px 0px;
+    }
+    
+    .steps-box:first-child {
+        text-align: center;
+        padding-right: 1%;
+    }
+    
+    .steps-box:last-child {
+        padding:0 1%;
+        margin-top: 35px;
+    }
+    
+    .works-step div {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    
+    html {
+        font-size: 15px;
+        font-weight: 100;
+    }
+    
+    .row {
+        width: 100%;
+        padding: 0 1%;
+    }
+    
+    .col {
+        width: 100%;
+        margin: 0 0;
+    }
+    
+    h2:after {
+        margin: 10px auto 0px auto;
+    }
+    
+    section {
+        padding: 20px 0px;
+    }
+    
+    h1 {
+        font-size: 180%;
+    }
+
+    h2 {
+        font-size: 120%;
+    }
+    
+    h2:after {
+        margin: 5px auto 0px auto;
+    }
+
+    h3 {
+        font-size: 70%;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+    
+    .steps-box {
+        margin-top: 15px;
+    }
+    
+    .steps-box:first-child {
+        text-align: center;
+        padding-right: 1%;
+    }
+    
+    .steps-box:last-child {
+        padding:0 1%;
+        margin-top: 20px;
+    }
+    
+    .works-step div {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    
+}
