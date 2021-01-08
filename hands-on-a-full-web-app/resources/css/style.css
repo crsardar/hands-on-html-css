@@ -182,6 +182,15 @@ header {
     margin-top: 1%;
 }
 
+.logo-black {
+    width: 50px;
+    height: auto;
+    float: left;
+    margin: .5% 0;
+    display: none;
+}
+
+/* Main Navigation */
 .main-nav {
     float:right;
     list-style: none;
@@ -207,6 +216,39 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
+
+/* Sticky Navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black{
+    display: block;
+}
+
+.sticky .main-nav {
+    float:right;
+    list-style: none;
+    margin-top: 2.9%;
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 5px 0px;
+    color: #555;
+}
+
 
 /*-----------------------------------------*/
 /*  MEALS   */

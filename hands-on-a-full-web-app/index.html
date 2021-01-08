@@ -14,29 +14,37 @@
         
         <!-- Google's WebFront -->
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        
+        <!-- jQuery -->
+        <script type="text/javascript" src="vendors/js/jquery-3.5.1.js"></script>
+        <!-- WayPoint Plugin for jQuery -->
+        <script type="text/javascript" src="vendors/js/jquery.waypoints.min.js"></script>
+        <!-- My Own jQuery file-->
+        <script type="text/javascript" src="resources/js/scripts.js"></script>
     </head>
     <body>
         <header>
-            <nav>
+            <nav id="jq--main-nav">
                 <div class="row"> <!-- 'class="row"' to put at center -->
                     <img src="resources/img/logo-white.png" alt="Site Logo" class="logo">
+                    <img src="resources/img/logo.png" alt="Site Logo" class="logo-black">
                     <ul class="main-nav">
-                        <li><a href="#">Food delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Courcities</a></li>
-                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#food-delivery">Food delivery</a></li>
+                        <li><a href="#how-it-works">How it works</a></li>
+                        <li><a href="#cities">Cities</a></li>
+                        <li><a href="#sign-up">Sign up</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food. <br>Hello super healthy meals!</h1>
                 <!-- class ="btn btn-full" 2 classes applied here 1. 'btn' 2. 'btn-full' -->
-                <a class ="btn btn-full" href="#">I’m hungry</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <a class ="btn btn-full jq--scroll-to-plans" href="#">I’m hungry</a>
+                <a class="btn btn-ghost jq-scroll-to-features" href="#">Show me more</a>
             </div>
         </header>
         
-        <section class="section-features">
+        <section class="section-features js--section-features"  id="food-delivery">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food</h2>
                 <p class="long-copy">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
@@ -107,7 +115,7 @@
         </section>
         <div class="clearfix"></div>
         
-        <section class="section-steps">
+        <section class="section-steps" id="how-it-works">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             <div class="row">
                 <div class="col span-1-of-2 steps-box">
@@ -131,7 +139,7 @@
             </div>
         </section>
         
-        <section class="section-cities">
+        <section class="section-cities" id="cities">
             <div class="cities-row">
                 <h2>We're currently in these cities</h2>
                 <div class="col span-1-of-4 cities-box">
@@ -183,7 +191,7 @@
             </div>
         </section>
         
-        <section class="section-plans">
+        <section class="section-plans jq--section-plans" id="sign-up">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
