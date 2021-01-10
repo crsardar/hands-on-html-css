@@ -79,5 +79,60 @@ $(document).ready(function() {
         offset: '-90%'
     })
     */
+    
+    /* Mobile Navigation */
+    $('.js--mobile-nav-menu-open').click(function() {
+        
+        var nav = $('.js--main-nav');
+        nav.slideToggle(200); // Smothly Open and Close the Menu, with animation.
+        
+        var menuOpen = $('.js--mobile-nav-menu-open');
+        var menuClose = $('.js--mobile-nav-menu-close');
+        
+        if(menuOpen.hasClass('js--display')){
+            
+            menuOpen.removeClass('js--display');
+            menuClose.addClass('js--display');
+            
+            menuOpen.addClass('js--no-display');
+            menuClose.removeClass('js--no-display');
+           
+        } else {
+            
+            menuOpen.removeClass('js--no-display');
+            menuClose.addClass('js--no-display');
+            
+            menuOpen.addClass('js--display');
+            menuClose.removeClass('js--display');
+        }  
+    });
+    
+    $('.js--mobile-nav-menu-close').click(function() {
+        
+        var nav = $('.js--main-nav');
+        nav.slideToggle(200); // Smothly Open and Close the Menu, with animation.
+        
+        var menuOpen = $('.js--mobile-nav-menu-open');
+        var menuClose = $('.js--mobile-nav-menu-close');
+        
+        if(menuOpen.hasClass('js--display')){
+            
+            menuOpen.removeClass('js--display');
+            menuClose.addClass('js--display');
+            
+            menuOpen.addClass('js--no-display');
+            menuClose.removeClass('js--no-display');
+           
+        } else {
+            
+            menuOpen.removeClass('js--no-display');
+            menuClose.addClass('js--no-display');
+            
+            menuOpen.addClass('js--display');
+            menuClose.removeClass('js--display');
+        }  
+    });
+    
+    
     // All jQuery Code should be above it(inside input to 'ready()')
 });

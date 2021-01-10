@@ -112,9 +112,15 @@ only mentioned attributes in this blocks will be over-written. */
     h3 {
         font-size: 70%;
     }
-    
+
     .main-nav {
+        width: 100%;
+        float: left;
         display: none;
+    }
+    
+    .main-nav li {
+        display: block;
     }
     
     .steps-box {
