@@ -34,6 +34,11 @@ only mentioned attributes in this blocks will be over-written. */
     h3 {
         font-size: 90%;
     }
+    
+    .mobile-nav-menu-open,
+    .mobile-nav-menu-close {
+        display: none;
+    }
 
 }
 
@@ -69,6 +74,11 @@ only mentioned attributes in this blocks will be over-written. */
     .works-step div {
         width: 40px;
         height: 40px;
+    }
+    
+    .mobile-nav-menu-open,
+    .mobile-nav-menu-close {
+        display: none;
     }
 }
 
@@ -120,6 +130,10 @@ only mentioned attributes in this blocks will be over-written. */
     }
     
     .main-nav li {
+        display: block;
+    }
+    
+    .js--display {
         display: block;
     }
     
