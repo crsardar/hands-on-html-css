@@ -1,0 +1,126 @@
+/* Importing Google Fonts directly in CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+/*
+Green   =   #67b26f
+Blue    =   #4ca2cd
+Mid     =   #5aaa9d
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* 
+    Making entire body as Flex container 
+    Flex Props 
+    */
+    display: flex;
+    align-items: center; /* Vertical Axis */
+    justify-content: center; /* Horizontal Axis */
+     
+    /* Others */
+    height: 100vh;
+    color: #444;
+    font-family: Roboto;
+    padding: 50px;
+    background: linear-gradient(to bottom right, #67b26f, #4ca2cd);
+    
+}
+
+
+.pizza {
+    
+    /* Flex Props */
+    display: flex;
+    align-items: stretch;
+    
+    /* Others */
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 30px 80px 10px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+
+.piza__hero {
+    flex: 0 0 45%; /* Same as 'flex-basis: 45%;' */
+}
+
+.pizza__img {
+    width: 100%;
+    display: block; /* Removes extra space at the bottom of the image */
+}
+
+.pizza__content {
+     /* Flex Props */
+    flex: 1; /* Same as 'flex-grow: 1;'. Will take all left over space of parent container */
+    
+    /* Itself will be a Flex container */
+    display: flex;
+    flex-direction: column;
+    
+    /* Others */
+    background: white;
+    padding: 35px 30px;
+}
+
+.pizza__price {
+    /* Flex Props */
+    flex: 0 0 50px;
+    
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    
+    
+    /* Others */
+    writing-mode: vertical-rl;
+    color: white;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #67b26f, #4ca2cd);
+}
+
+.pizza__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pizza__heading {
+    font-size: 20px;
+    margin-right: auto; /* Using 'flex: 1;' is NOT good. 'margin-right: auto;' is the best */
+}
+
+.pizza__tag {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    border-radius: 300px;
+    margin-left: 5px;
+}
+
+.pizza__tag--1 {background-color: #67b26f}
+
+.pizza__tag--2 {background-color: #4ca2cd}
+
+
+.pizza__description {
+    flex:1; /* Will take all left over space of parent container */
+    
+    /* To align Content at vertical center */
+    display: flex;
+    align-items: center;
+}
+
+.pizza__details {
+    align-self: stretch;
+    
+    height: 70px;
+    background-color: aqua;
+}
+
